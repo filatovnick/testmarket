@@ -4,7 +4,7 @@
 
 **Inside your composer project**
 
-`php composer.phar require "filatovnick/testtask:dev-master"`
+`php composer.phar require "filatovnick/testmarket:dev-master"`
 
 **Standalone**
 
