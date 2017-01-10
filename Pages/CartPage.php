@@ -38,10 +38,9 @@ class CartPage extends Page
     public function verifyNumberItem()
     {
         $numberCartItem = $this->driver->findElements(WebDriverBy::cssSelector($this->getItemsOfCart()));
-
-        assertCount(1, $numberCartItem);
+        PHPUnit\Framework\TestCase::assertCount(1, $numberCartItem);
         $itemCountValue = $this->driver->findElement(WebDriverBy::cssSelector($this->getItemCount()));
-        assertCount(1, $itemCountValue);
+        PHPUnit\Framework\TestCase::assertCount(1, $itemCountValue);
     }
 
     public function goToCheckout()
